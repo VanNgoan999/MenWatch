@@ -1,0 +1,55 @@
+﻿@model IEnumerable<DongHoNam.Models.SANPHAM>
+@if (Model != null)
+{
+   <div id="search_home">
+    <div class="row" style="background-color:black;text-align:center;margin-top:5px">
+        <img src="~/Image/logo.jpg" />
+    </div>
+    <div class="row">
+
+
+
+        <div class="col-md-8 container panel-primary" style="margin-top:5px">
+            <div class="text-center panel-heading"><h2>Sản phẩm mới </h2></div>
+            <div class="row panel-body">
+                <div>
+                    @foreach (var item in Model)
+                    {
+                        <div class="col-md-4" style="margin-top:50px;height:300px">
+                            <div style="width:250px;height:30px"><b>@item.TENSP</b></div><br />
+                            <div>
+                                <a href="@Url.Action("Detail", "SanPham", new { ID_Sanpham = item.MASP })">
+                                    <img src="~/image-sanpham/@item.HINH" width="200px" height="200px" />
+                                </a>
+                            </div><br />
+                            <div class="row">
+                                <div class="col-md-7"><b>@item.GIA.ToString("#,##0") VNĐ</b></div>
+
+                                <div class="col-md-5">
+                                    <a class="btn btn-danger" href="@Url.Action("AddToCart", "GioHang", new { ID_Sanpham = item.MASP })">Mua</a>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-4 navbar navbar-stiky-top" style="top:55px;z-index:1000">
+            <img src="~/Image/mau.jpg" style="width:100%;margin-top:20px" /><br />
+            <img src="~/Image/mau_3.jpg" style="width:100%;margin-top:5px" />
+        </div>
+    </div>
+</div>
+}else
+{
+    <div class="row text-warning">Không có kết quả</div>
+}
+

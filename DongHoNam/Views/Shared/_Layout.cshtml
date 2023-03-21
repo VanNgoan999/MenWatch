@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>    
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/Tuyetroi.js"></script>
+    <script src="~/Scripts/TraCuu_home.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+  @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body> 
+    
+         <div class="row"  style="background-color:black">
+
+             <div class="col-md-8 text-center" style="margin-top:15px">
+                 <img src="~/Image/logo_top.png" width="300px" />
+
+             </div>
+             
+             <div class="col-md-4 text-left " style="color:white;font-size:larger">
+                 <div style="margin-top:15px">Hotline: <b>0853857770</b></div><br />
+                 <div class="navbar navbar-white ">
+                     <div class="navbar-collapse collapse">
+                         @using DongHoNam.Models
+                         @{ 
+                             KHACHHANG kh = (KHACHHANG)Session["KH"];
+                         }
+                         @if (kh == null)
+                         {
+                         <ul class="nav navbar-nav">
+                             <li><a href="@Url.Action("DangKy","KhachHang")"><span class="glyphicon glyphicon-user"> Đăng ký</span></a> </li>
+                             
+                             <li><a href="@Url.Action("DangNhap","KhachHang")"><span class="glyphicon glyphicon-log-in"> Đăng nhập</span></a></li>
+                         </ul>
+                         }
+                         else
+                         {
+                            <ul class="nav navbar-nav">
+                                <li><a> @kh.HOTEN</a> </li>
+
+                                <li><a href="@Url.Action("DangXuat","KhachHang")"><span class="glyphicon glyphicon-log-out"> Đăng xuất</span></a></li>
+                            </ul>
+                         }
+
+                     </div>
+                 </div>
+             </div> 
+         </div>
+             
+       <div class="navbar navbar-black navbar-stiky-top" style="background-color:white">            
+        <div class="navbar-collapse collapse container" >
+            <b>
+
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Trang chủ", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Sản phẩm", "Index", "SanPham")</li>
+                    <li>@Html.ActionLink("Thương hiệu", "Index", "ThuongHieu")</li>
+                    <li>@Html.ActionLink("Giới thiệu", "GioiThieu", "Home")</li>
+                    <li>@Html.ActionLink("Giỏ hàng", "ViewCart", "GioHang")</li>
+                </ul>
+            </b>
+            <form class="navbar-form text-right container">
+                <div class="form-group">
+                    <input onkeyup="loadSP(1)" type="text" id="search" class="form-control" placeholder="Tên sản phẩm..." name="search"  />
+                </div>
+                <button type="submit" class="btn btn-black"><i class="glyphicon glyphicon-search"></i>Tìm</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="body-content">
+    
+        <div style="min-height:1000px">
+            
+            @if (Session["TB"]!= null)
+            {
+                <script language="javascript" type="text/javascript">
+                    alert('Đơn hàng của bạn đã được tiếp nhận. Cảm ơn bạn đã đặt hàng \n Đơn hàng sẽ được giao đến bạn trong vòng 2-5 ngày');
+                </script>
+                Session.Remove("TB");
+            }
+            <div id="search_home">
+                @RenderBody()
+            </div>
+        </div>
+    
+            <hr />
+            <footer>
+                <div style="background-color:black;color:darkgray" class="text-center">
+                    <p>&copy; @DateTime.Now.Year - Fourmen Watch</p>
+                    <p><b>Địa chỉ:</b> 67D Phú Mỹ - Phường 22 - Bình Thạnh - Tp.HCM</p>
+                    <p><b>Email:</b>fourmenwatch@gmail.com</p>
+                    <p><b>Điện thoại:</b>0853827770</p>
+                </div>
+            </footer>
+        </div>
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+</body>
+</html>

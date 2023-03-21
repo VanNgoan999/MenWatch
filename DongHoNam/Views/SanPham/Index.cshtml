@@ -1,0 +1,63 @@
+﻿@model IEnumerable<DongHoNam.Models.SANPHAM>
+
+@if(Model!=null)
+    {
+    <div class="row">
+        <div class="col-md-3 navbar navbar-stiky-top" style="top:55px;z-index:1000">
+        @Html.Partial("View_MenuSP")
+        </div>
+
+        <div class="container panel-primary col-md-9">
+            <div class="text-center panel-heading"><h3>@ViewBag.Tieude </h3></div>
+            <div class="row panel-body">
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-4" style="margin-top:50px;height:300px">
+                        <div style="width:250px;height:30px"><b>@item.TENSP</b></div><br />
+                        <div>
+                            <a href="@Url.Action("Detail", "SanPham", new { ID_Sanpham = item.MASP })">
+                                <img src="~/image-sanpham/@item.HINH" width="200px" height="200px" />
+                            </a>
+                        </div><br />
+                        <div class="row" style="color:black">
+                            <div class="col-md-7"><b>@item.GIA.ToString("#,##0") VNĐ</b></div>
+
+                            <div class="col-md-5">
+                                <a class="btn btn-danger" href="@Url.Action("AddToCart", "GioHang", new { ID_Sanpham = item.MASP })">Mua</a>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                }
+            </div>
+            <div class="text-center">
+                @if (ViewBag.pageNumber > 1)
+                {
+                    @Html.ActionLink("<<", "Index", new { page = ViewBag.pageNumber - 1 }, new { @class = "btn btn-black" })
+                }
+                @for (int i = ViewBag.pageNumber - 2; i <= ViewBag.pageNumber + 2; i++)
+                {
+                    if (i > 2 && i < ViewBag.pageMax - 2)
+                    {
+                        @Html.ActionLink(i.ToString(), "Index", new { page = i }, new { @class = "btn btn-black" })
+                    }
+                }
+                @if (ViewBag.pageNumber < ViewBag.pageMax)
+                {
+                    @Html.ActionLink(">>", "Index", new { page = ViewBag.pageNumber + 1 }, new { @class = "btn btn-black" })
+                }
+            </div>
+        </div>
+    </div>
+   
+}
+else
+{
+    <div class="panel panel-warning">Không có kết quả</div>
+}
+

@@ -1,0 +1,24 @@
+﻿@model DongHoNam.Models.SANPHAM
+@using DongHoNam.Models
+@{ 
+    WatchDB db = new WatchDB();
+    var dsComment = db.DANHGIAs.Where(x => x.MASP == Model.MASP).ToList();
+}
+    
+    <div class="container panel-primary" style="margin-top:5px">
+        <div class="text-center panel-heading"><h3>@Model.TENSP </h3></div>
+        <div class="row panel-body">
+            <div class="text-center col-md-6"><img src="~/image-sanpham/@Model.HINH" style="max-width:500px" /></div>
+            <div class="col-md-6" style="font-size:medium">
+                <div class="text-left"><b>Giá:</b> @Model.GIA.ToString("#,##0") VNĐ</div>
+                <div class="text-left"><b>Ngày nhập:</b> @Model.NGAYNHAP.ToShortDateString()</div>
+                <div class="text-left"><b>Màu sắc:</b> @Model.MAUSAC</div>
+                <div class="text-left"><b>Thương hiệu:</b> @Model.THUONGHIEU.TENTH</div>
+                <div class="text-left"><b>Xuất xứ:</b> @Model.THUONGHIEU.QUOCGIA</div>
+                <div class="text-left"><b>Năng lượng:</b> @Model.NANGLUONG</div>
+                <div class="text-left"><b>Chống nước:</b> @Model.CHONGNUOC M</div>
+               
+            </div>
+        </div>
+    </div>
+

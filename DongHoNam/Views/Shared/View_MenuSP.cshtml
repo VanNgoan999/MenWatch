@@ -1,0 +1,30 @@
+﻿@using DongHoNam.Models
+
+@{
+    var db = new WatchDB();
+}
+
+    <div class="list-group " style="margin-top:20px">
+        <a href="#" class="list-group-item black">
+            <span class="glyphicon glyphicon-list"></span> CHỦNG LOẠI ĐỒNG HỒ
+        </a>
+        @foreach (var item in db.LOAIs.ToList())
+    {
+            <a href="@Url.Action("Index",new { ID_Loai= item.MALOAI})" class="list-group-item">
+                @item.TENLOAI<span class="badge"> @item.SANPHAMs.Count </span>
+            </a>
+    }
+
+    </div><br />
+<div class="list-group " style="margin-top:20px">
+    <a href="#" class="list-group-item black">
+        <span class="glyphicon glyphicon-list"></span> CÁC THƯƠNG HIỆU
+    </a>
+    @foreach (var item in db.THUONGHIEUx.ToList())
+    {
+        <a href="@Url.Action("Index",new { ID_ThuongHieu= item.MATH})" class="list-group-item">
+            @item.TENTH<span class="badge"> @item.SANPHAMs.Count </span>
+        </a>
+    }
+
+</div>

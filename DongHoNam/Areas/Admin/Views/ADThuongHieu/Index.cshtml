@@ -1,0 +1,101 @@
+﻿@model DongHoNam.Models.THUONGHIEU
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAD.cshtml";
+}
+<script src="~/Scripts/backend/ThuongHieu.js"></script>
+<div class="panel-default">
+    <div class="panel-heading">
+        <h4>Quản lý danh mục thương hiệu</h4>
+    </div>
+    <div class="panel-body" id="Main">
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#THModal" onclick="clearTextBox();">Thêm mới Thương hiệu</button><br /><br />
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr class="black">
+                        <th>
+                            Mã thương hiệu
+                        </th>
+                        <th>
+                            Tên thương hiệu
+                        </th>
+                        <th>
+                            Logo
+                        </th>
+                        <th>
+                            Năm thành lập
+                        </th>
+                        <th>
+                            Quốc gia
+                        </th>
+                        <th>
+
+                        </th>
+
+                    </tr>
+                </thead>
+                <tbody class="tbody"></tbody>
+            </table>
+  
+        <div class="modal fade" id="THModal" tabindex="-1" role="dialog" aria-labelledby="ModalLable" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!---->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h3 class="modal-title" id="ModalLable">Thêm/Sửa thương hiệu đồng hồ</h3>
+                    </div>
+                    <!---->
+                    <div class="modal-body">
+                        <form enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="MATH">Mã thương hiệu</label>
+                                <input type="text" class="form-control" id="txtMaTH" disabled="disabled" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="TENTH">Tên tên thương hiệu</label>
+                                <input type="text" class="form-control" id="txtTenTH" placeholder="Tên thương hiệu" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="LOGO">Logo</label>
+                                <input type="file" name="LOGO" class="form-control" id="F_logo" />
+                                <input type="hidden" id="tenhinh" />
+                                <img id="imgth" style="width:200px" />
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="NAMTL">Năm thành lập</label>
+                                <input type="text" class="form-control" id="txtNamTL" placeholder="Năm thành lập" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="QUOCGIA">Quốc gia</label>
+                                <input type="text" class="form-control" id="txtQuocGia" placeholder="Quốc gia" />
+                            </div>
+
+                            <div class="form-group">
+                                <b>Mô tả</b>
+                                <textarea type="text" class="form-control" id="txtMoTa" placeholder="Mô tả"></textarea>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!---->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="btnThem" onclick="Add()">Thêm</button>
+                        <button type="button" class="btn btn-primary" style="display:none" id="btnSua" onclick="Update()">Sửa</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="panel-body" id="detail">
+
+    </div>
+</div>

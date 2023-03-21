@@ -1,0 +1,114 @@
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\ApplicationInsights.config
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\roslyn\csc.exe
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\roslyn\System.Collections.Immutable.dll
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\roslyn\System.Reflection.Metadata.dll
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\roslyn\vbc.exe
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\roslyn\VBCSCompiler.exe
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\roslyn\VBCSCompiler.exe.config
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\DongHoNam.dll.config
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\DongHoNam.dll
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\DongHoNam.pdb
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\Antlr3.Runtime.dll
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\Microsoft.AI.Agent.Intercept.dll
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\Microsoft.AI.DependencyCollector.dll
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\Microsoft.AI.Web.dll
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\Microsoft.AI.WindowsServer.dll
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\Microsoft.ApplicationInsights.dll
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\Microsoft.Web.Infrastructure.dll
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\Newtonsoft.Json.dll
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\System.Web.Helpers.dll
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\System.Web.Mvc.dll
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\System.Web.Optimization.dll
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\System.Web.Razor.dll
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\System.Web.WebPages.Deployment.dll
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\System.Web.WebPages.dll
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\System.Web.WebPages.Razor.dll
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\WebGrease.dll
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\Microsoft.AI.DependencyCollector.xml
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\Microsoft.AI.ServerTelemetryChannel.xml
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\Microsoft.AI.Web.xml
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\Microsoft.AI.WindowsServer.xml
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\Microsoft.ApplicationInsights.xml
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\System.Web.Helpers.xml
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\System.Web.Mvc.xml
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\System.Web.Optimization.xml
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\System.Web.Razor.xml
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\System.Web.WebPages.xml
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\System.Web.WebPages.Deployment.xml
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\System.Web.WebPages.Razor.xml
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\Antlr3.Runtime.pdb
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\Newtonsoft.Json.xml
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\obj\Debug\DongHoNam.csprojResolveAssemblyReference.cache
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\obj\Debug\DongHoNam.dll
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\obj\Debug\DongHoNam.pdb
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\EntityFramework.dll
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\EntityFramework.SqlServer.dll
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\EntityFramework.xml
+G:\NGOAN\LTWeb_NC\DoAn\DongHoNam\DongHoNam\bin\EntityFramework.SqlServer.xml
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\obj\Debug\DongHoNam.csprojResolveAssemblyReference.cache
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\obj\Debug\DongHoNam.dll
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\obj\Debug\DongHoNam.pdb
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\ApplicationInsights.config
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\roslyn\csc.exe
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\roslyn\vbc.exe
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\roslyn\VBCSCompiler.exe
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\DongHoNam.dll.config
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\DongHoNam.dll
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\DongHoNam.pdb
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\Antlr3.Runtime.dll
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\EntityFramework.dll
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\EntityFramework.SqlServer.dll
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\Microsoft.AI.Web.dll
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\Microsoft.ApplicationInsights.dll
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\Newtonsoft.Json.dll
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\System.Web.Helpers.dll
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\System.Web.Mvc.dll
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\System.Web.Optimization.dll
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\System.Web.Razor.dll
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\System.Web.WebPages.Deployment.dll
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\System.Web.WebPages.dll
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\System.Web.WebPages.Razor.dll
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\WebGrease.dll
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\EntityFramework.xml
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\EntityFramework.SqlServer.xml
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\Microsoft.AI.Web.xml
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\Microsoft.ApplicationInsights.xml
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\System.Web.Helpers.xml
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\System.Web.Mvc.xml
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\System.Web.Optimization.xml
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\System.Web.Razor.xml
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\System.Web.WebPages.xml
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\System.Web.WebPages.Deployment.xml
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\System.Web.WebPages.Razor.xml
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\Antlr3.Runtime.pdb
+C:\Users\TAM THAI\Desktop\DoAn\DongHoNam\DongHoNam\bin\Newtonsoft.Json.xml

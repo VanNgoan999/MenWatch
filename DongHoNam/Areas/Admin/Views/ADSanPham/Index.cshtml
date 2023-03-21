@@ -1,0 +1,139 @@
+﻿@model DongHoNam.Models.SANPHAM
+@{
+    ViewBag.Title = "Index_SP";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAD.cshtml";
+}
+<script src="~/Scripts/backend/SanPham.js"></script>
+<div class="panel-default">
+    <div class="panel-heading">
+        <h4>Quản lý danh mục đồng hồ</h4>
+    </div>
+    <div class="panel-body" id="Main">
+        <div class="row container">
+            <div class="col-md-6">
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#SPModal" onclick="clearTextBox();">Thêm mới sản phẩm</button><br /><br />
+            </div>
+            <div class="col-md-6 form-inline text-right">
+                <input type="search" id="searchSP" class="form-control" onkeyup="loadSP(1);" placeholder="Nhập tên sản phẩm....">
+                <button type="submit" class="btn btn-black"> <i class="fa fa-search"></i> Tìm kiếm </button>
+            </div>
+        </div>
+        <div id="table">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr class="black">
+                        <th>
+                            Mã sản phẩm
+                        </th>
+                        <th>
+                            Tên sản phẩm
+                        </th>
+                        <th>
+                            Hình
+                        </th>
+                        <th>
+                            Giá
+                        </th>
+                        <th>
+                            Ngày nhập
+                        </th>
+                        <th>
+
+                        </th>
+
+                    </tr>
+                </thead>
+                <tbody class="tbody"></tbody>
+            </table>
+        </div>
+            <div class="modal fade" id="SPModal" tabindex="-1" role="dialog" aria-labelledby="ModalLable" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!---->
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h3 class="modal-title" id="ModalLable">Thêm/Sửa sản phẩm</h3>
+                        </div>
+                        <!---->
+                        <div class="modal-body">
+                            <form enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label for="MASP">Mã sản phẩm</label>
+                                    <input type="text" class="form-control" id="txtMaSP" disabled="disabled" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="TENSP">Tên sản phẩm</label>
+                                    <input type="text" class="form-control" id="txtTenSP" placeholder="Tên sản phẩm" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="GIA">Giá sản phẩm</label>
+                                    <input type="text" class="form-control" id="txtGia" placeholder="Giá sản phẩm" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="HINH">Hình</label>
+                                    <input type="file" name="HINH" class="form-control" id="HINH" />
+                                    <input type="hidden" id="tenhinh" />
+                                    <img id="imgSP" style="width:150px" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="LOAI">Loại đồng hồ</label>
+                                    <select id="loaidongho" name="loaidongho" class="form-control"></select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="THUONGHIEU">Thương hiệu</label>
+                                    <select id="thuonghieu" name="thuonghieu" class="form-control"></select>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="NGAYNHAP">Ngày nhập</label>
+                                    <div class="row form-inline">
+                                        <select id="nam" name="nam" class="form-control" style="width:150px"></select>
+                                        <select id="thang" name="thang" class="form-control" style="width:150px"></select>
+                                        <select id="ngay" name="ngay" class="form-control" style="width:150px"></select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="MAUSAC">Màu sắc</label>
+                                    <input type="text" class="form-control" id="txtMauSac" placeholder="Màu sắc" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="CHATLIEU">Chất liệu</label>
+                                    <input type="text" class="form-control" id="txtChatLieu" placeholder="Chất liệu" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="NANGLUONG">Năng lượng</label>
+                                    <input type="text" class="form-control" id="txtNangLuong" placeholder="Năng lượng" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="CHONGNUOC">Chống nước</label>
+                                    <input type="text" class="form-control" id="txtChongNuoc" placeholder="Chống nước" />
+                                </div>
+
+                                <div class="form-group">
+                                    <b>Mô tả</b>
+                                    <textarea type="text" class="form-control" id="txtMoTa" placeholder="Mô tả"></textarea>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!---->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" id="btnThem" onclick="Add()">Thêm</button>
+                            <button type="button" class="btn btn-primary" style="display:none" id="btnSua" onclick="Update()">Sửa</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    <div class="panel-body" id="detail"></div>
+    </div>

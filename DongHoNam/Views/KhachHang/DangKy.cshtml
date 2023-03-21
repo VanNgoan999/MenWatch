@@ -1,0 +1,89 @@
+﻿
+@{
+    ViewBag.Title = "DangKy";
+}
+@model DongHoNam.Models.KhachHangDangKyModelView
+
+<div class="container panel-primary col-md-8" style="margin-left:15%">
+    <div class="text-center panel-heading"><h3>Đăng ký </h3></div>
+    <div class="row panel-body">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-horizontal">
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    @Html.LabelFor(model => model.HOTEN, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-8">
+                        @Html.EditorFor(model => model.HOTEN, new { htmlAttributes = new { @class = "form-control",@placeholder="NHẬP HỌ TÊN" } })
+                        @Html.ValidationMessageFor(model => model.HOTEN, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.EMAIL, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-8">
+                        @Html.EditorFor(model => model.EMAIL, new { htmlAttributes = new { @class = "form-control", @placeholder = "NHẬP EMAIL" } })
+                        @Html.ValidationMessageFor(model => model.EMAIL, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.SDT, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-8">
+                        @Html.EditorFor(model => model.SDT, new { htmlAttributes = new { @class = "form-control", @placeholder = "NHẬP EMAIL" } })
+                        @Html.ValidationMessageFor(model => model.SDT, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.PASSWORD, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-8">
+                        @Html.PasswordFor(model => model.PASSWORD, new { @class = "form-control", @placeholder = "NHẬP MẬT KHẨU" })
+                        @Html.ValidationMessageFor(model => model.PASSWORD, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.CONFIRMPASSWORD, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-8">
+                        @Html.PasswordFor(model => model.CONFIRMPASSWORD, new { @class = "form-control", @placeholder = "MẬT KHẨU XÁC NHẬN" })
+                        @Html.ValidationMessageFor(model => model.CONFIRMPASSWORD, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-4 text-right">
+                        @Html.ActionLink("Quay lại", "Index", "SanPham", new { @class = "btn btn-info" })
+                    </div>
+                    <div class="col-md-8">
+                        <input type="submit" value="Đăng ký" class="btn btn-black" />
+                    </div>
+                    
+                </div>
+            </div>
+        }
+
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

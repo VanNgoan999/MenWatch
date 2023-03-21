@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="~/Scripts/Tuyetroi.js"></script>  
+
+
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+      
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+
+    <div class="row navbar navbar-fixed-top" style="background-color:black">
+        <div class="col-md-8 text-center" style="margin-top:15px">
+            <img src="~/Image/logo_top.png" style="width:300px" />
+        </div>
+        <div class="col-md-4">
+            @if (@User.Identity.Name.Length >0)
+            {
+            <div class="navbar navbar-white ">
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a>Chào: @User.Identity.Name</a> </li>
+
+                        <li><a href="@Url.Action("Logout", "Account")"><span class="glyphicon glyphicon-log-out"> Đăng xuất</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            }
+        </div>
+
+
+    </div>
+
+            <div class="row" style="margin-top:175px">
+                <div class="col-md-3 navbar-stiky-top" style="top:170px">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item black">
+                            <span class="glyphicon glyphicon-tower"></span> ADMINTRATOR
+                        </a>
+
+                        <a href="@Url.Action("Index","ADHome")" class="list-group-item">Trang chủ</a>
+                        <a href="@Url.Action("Index","ADLoaiSanPham")" class="list-group-item">Quản lý loại đồng hồ</a>
+                        <a href="@Url.Action("Index","ADThuongHieu")" class="list-group-item">Quản lý thương hiệu</a>
+                        <a href="@Url.Action("Index","ADSanPham")" class="list-group-item">Quản lý đồng hồ</a>
+                        <a href="@Url.Action("Index","ADDonHang")" class="list-group-item">Quản lý đơn hàng</a>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+                <div style="min-height:700px;" class="col-md-9 container  body-content">
+                    @RenderBody()
+                </div>
+
+                <hr />
+
+            </div>
+
+            @Scripts.Render("~/bundles/jquery")
+            @Scripts.Render("~/bundles/bootstrap")
+            @RenderSection("scripts", required: false)
+</body>
+</html>

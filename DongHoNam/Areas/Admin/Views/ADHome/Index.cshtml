@@ -1,0 +1,86 @@
+﻿@model IEnumerable<DongHoNam.Models.DONHANG>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAD.cshtml";
+}
+
+<h2>Bảng thống kê</h2>
+<div class="row container">
+    <div class="col-md-3 container">
+        <div class="row">
+            <div class="col-md-5 btn btn-success btn-lg"><h3><i class="glyphicon glyphicon-stats"></i></h3></div>
+            <div class="col-md-7">
+                <div style="font-size:medium;color:#4f4e4e"><b>@ViewBag.SanPham</b></div>
+                <div><small style="color:#808080">Sản phẩm</small></div>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <div class="col-md-3 container">
+        <div class="row">
+            <div class="col-md-5 btn btn-info btn-lg"><h3><i class="glyphicon glyphicon-shopping-cart"></i></h3></div>
+            <div class="col-md-7">
+                <div style="font-size:larger;color:#4f4e4e"><b>@ViewBag.DonHang</b></div>
+                <div><small style="color:#808080">Đơn hàng</small></div>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <div class="col-md-3 container">
+        <div class="row">
+            <div class="col-md-5 btn btn-danger btn-lg"><h3><i class="glyphicon glyphicon-user"></i></h3></div>
+            <div class="col-md-7">
+                <div style="font-size:medium;color:#4f4e4e"><b>@ViewBag.KhachHang</b></div>
+                <div><small style="color:#808080">Khách hàng</small></div>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <div class="col-md-3 container">
+        <div class="row">
+            <div class="col-md-5 btn btn-warning btn-lg"><h3><i class="glyphicon glyphicon-usd"></i></h3></div>
+            <div class="col-md-7">
+                <div style="font-size:medium;color:#4f4e4e"><b>@ViewBag.DoanhThu.ToString("#,##0")</b></div>
+                <div><small style="color:#808080">Doanh thu</small></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="panel panel-default">
+        <div class="panel-heading">Đơn hàng mới nhất</div>
+        <div class="panel-body">
+            <table class="table table-bordered">
+                <tr class="black">
+                    
+                    <th>Khách hàng</th>
+                    <th>Ngày đặt</th>
+                    <th class="text-center">Trạng thái</th>
+                    <th>Tổng tiền</th>
+                    
+                </tr>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.KHACHHANG.HOTEN</td>
+                        <td>@item.NGAYDAT</td>
+                        <td class="text-center">                    
+                            @if(item.TRANGTHAI==true)
+                            {
+                                <i class="glyphicon glyphicon-ok-sign text-success"></i>
+                            }
+                            else
+                            {
+                                <i class="glyphicon glyphicon-remove-sign text-danger"></i>
+                            }
+                        </td>
+                        <td>@item.TONG.ToString("#,##0") VNĐ</td>                        
+                    </tr>
+                }                
+
+            </table>
+
+        </div>
+    </div>
+</div>
+

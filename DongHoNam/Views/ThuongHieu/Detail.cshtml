@@ -1,0 +1,22 @@
+﻿@model DongHoNam.Models.THUONGHIEU
+@{
+    ViewBag.Title = "Detail";
+}
+<div class="container panel-primary" style="margin-top:5px">
+    <div class="text-center panel-heading"><h3>@Model.TENTH </h3></div>
+    <div class="row panel-body">
+        <div class="text-center col-md-7"><img src="~/image-Thuonghieu/@Model.LOGO" style="max-width:650px"/></div>
+            <div class="col-md-5" style="font-size:medium">
+            
+                <div class="text-left"><b>Năm thành lập:</b> @Model.NAMTL</div>
+                <div class="text-left"><b>Quốc gia:</b> @Model.QUOCGIA</div>
+                <div class="text-left"><b>Mô tả:</b> @Model.MOTA</div> <br /> 
+                <div><a class="btn btn-black" href="@Url.Action("Index","Home")">Trang chủ</a></div>           
+            </div>
+            </div>
+    </div>
+
+
+
+
+
